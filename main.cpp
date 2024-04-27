@@ -191,14 +191,15 @@ int Menu () {
             circulos.push_back(nuevoCirculo);
             break;
         }
-        case 5:
-            return 0;
-        default:
-            cout << "";
+          case 9: {
+              quit = true;
+              system("color E1");
+              cout << "\n\n\n\n\n\n\n\n\t\t\t\t\t\t Gracias por usar programa :D \n\n\n";
             break;
+        }
     }
-    return choice;
 }
+
 
 void cargarCuadrados() {
     for (const auto &cuadrado : cuadrados)
@@ -236,6 +237,7 @@ int main() {
         cargarRectangulos();
         gotoxy(CoordenadaX, CoordenadaY, Puntero);
 
+
         if (_kbhit()) {
             char key = _getch();
             switch (key) {
@@ -256,7 +258,9 @@ int main() {
                     break;
                 case '9':
                     quit = true;
-                    break;
+              system("color E1");
+              cout << "\n\n\n\n\n\n\n\n\t\t\t\t\t\t Gracias por usar programa :D \n\n\n";
+            break;
                 default:
                     if (GetKeyState(VK_F12) & 0x8000) {
                         Menu ();
