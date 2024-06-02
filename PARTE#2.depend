@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1715315103 source:c:\users\yanira cubule\desktop\carlos_sandoval_programacion1\programa_proyecto_final_prt_2\parte#2\main.cpp
+	<iostream>
+	<windows.h>
+	<conio.h>
+	<vector>
+
